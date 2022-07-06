@@ -15,6 +15,7 @@ app.get("/search", async (req, res) => {
         $or: [
           { name: { $regex: "^" + req.body.search, $options: "i" } },
           { symbol: { $regex: "^" + req.body.search, $options: "i" } },
+          { sector: { $regex: "^" + req.body.search, $options: "i" } },
         ],
       },
       { page, limit: 5 },
