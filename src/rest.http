@@ -1,7 +1,1 @@
-GET http://localhost:8000/search HTTP/1.1
-content-type: application/json
-
-{
-    "search": "a",
-    "page":2
-}
+GET https://smallcase-search-assingment.herokuapp.com/search/aaa/1 HTTP/1.1
